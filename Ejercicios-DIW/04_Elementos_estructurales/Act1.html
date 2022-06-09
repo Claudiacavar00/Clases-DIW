@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos estructurales</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200&display=swap');
+
+      :root{
+
+        --fuente: 'Permanent Marker', cursive;
+        --color:blue;
+        --tamaño: x-large;
+        --negrita: bold;
+        
+      }
+     
+        div p{
+
+            font-family: var(--fuente);
+            text-shadow: 5px 5px 5px blue;
+            font-weight: var(--negrita);
+            font-size: var(--tamaño);
+            color: var(--color);
+
+        }
+
+        figcaption{
+
+            font-size: 10px;
+            font-family: var(--fuente);;
+            font-weight: var(--negrita);
+            color: var(--color);
+            text-align: center;
+
+        }
+
+        div{
+            border-left: 2px solid blue;
+            border-right: 2px solid blue;
+            border-bottom: 1px solid blue;
+            border-top: 1px dashed blue;
+            border-top-left-radius: 50px 40px;
+            border-top-right-radius: 50px 40px;
+            height: 15vh;
+            text-align: center;
+            line-height: 100%;
+
+        }
+        figure {
+            border: 1px solid blue;
+            width: 60vw;
+            height: 60vh;
+            overflow: hidden;
+            
+        }
+
+        figure img{
+                
+            visibility: hidden;
+            width: 100%;
+            height: auto;
+        
+        }
+
+    
+        figure:hover img{
+                
+            visibility: visible;
+            transform: scale(1.7); 
+            transition: transform .1s; 
+
+            }
+        figure{
+            line-height: 200%;
+            width: 15em;
+            height: 15em;
+            float: left;
+            border: 1px solid blue;
+            padding: 0.2em;
+            }
+
+        .grande:hover {
+
+            border: 1px solid blue;
+            width: 80vw;
+            height: 20vw;
+            
+            width: 400px;
+            transition: width 1s;
+            
+        } 
+
+        hr{
+            
+            clear: left;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+
+    <!--La parte superior será un elemento div con bordes redondeados en las esquinas superiores.
+        Usa la propiedad line-height. Añadir sombra al texto de Línea 1 y Línea 2.
+        Las imágenes estarán ocultas, pero al pasar el ratón sobre ellas se muestren. 
+        Al hacer click sobre ellas con el ratón aumentarán su tamaño al doble.
+        Para que cada imagen aparezca al lado de la otra, utiliza float o también puedes 
+        hacerlo cambiando el display de la etiqueta figure a inline-block.
+        -->
+        
+    <hr>
+
+    <div> 
+        <p>Linea 1</p>
+        <p>Linea 2</p>    
+    </div>
+
+<hr>
+
+<figure>
+    <figcaption>Tigre</figcaption>
+    <img src="tigre.jpg" alt="tigre">
+    
+</figure>
+<figure>
+    <figcaption>Circulo</figcaption>
+    <img src="flor.jpg" alt="Flor">
+    
+</figure>
+
+<figure class="grande">
+
+    <figcaption>Pasta</figcaption>
+    <img src="https://th.bing.com/th/id/R.d6bb7ad16fb52c203cbde9feaa2ce41e?rik=OkcKHHv8ADHiBQ&pid=ImgRaw&r=0" alt="Pasta">
+    
+</figure>
+
+<figure>
+    <figcaption>Perro</figcaption>
+    <img src="https://www.affinity-petcare.com/advance/sites/default/files/field/image/perro-beagle-1.jpg" alt="perro">
+   
+</figure>
+
+
+
+
+<hr>
+
+    
+</body>
+</html>

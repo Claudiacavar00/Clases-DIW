@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comer sano</title>
+    <link rel="stylesheet" href="repaso_estilo.css">
+
+    <style>
+
+     /*Si tenemos dos reglas de estilos, prevalece la más nueva. En este ejercicio, prevalece AQUA pq tiene 2 etiquetas
+       Si hay dos reglas, el estilo que prevalece es el que sea más especifico
+        EJEMPLO: 
+             p.span{
+                color:red;
+            }
+                    
+            span{
+                color:blue;
+            }
+                
+        PREVALECE LA PRIMERA PQ TIENE 2 ETIQUETAS
+        */
+
+
+        span{
+            color: rgb(247, 0, 0) ;
+        }
+
+        p:lang(en){
+            font-style: italic;
+        }
+        
+        div p:nth-child(3){
+            /*border-top: 2px  solid white;
+            border-bottom: 2px dotted white;*/
+            text-decoration: line-through;
+
+        }
+        /*SOLO a las primeras letras de los primeros hijos*/
+        p:first-child::first-letter{
+            font-size: 4rem;
+            border-bottom: 2px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--SPAN: delimitar trozos de codigo en linea
+        DIV: delimitar trozos de codigo de tipo bloque-->
+    <p>Para <span>comer sano</span>  es muy importante las <strong>verduras</strong> y reducir las grasas</p>
+    <p lang="en">Press <kbd>Ctrl</kbd> + <kbd>C</kbd> C to cpy text (Windows).</p><br><br>
+
+    <div>
+
+        <p>Put perspiciatis unde omnis iste natus error sit voluptatem accusantium</p><br>
+         <p>doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><br>
+         <p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni </p><br>
+         <p >dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,</p><br>
+         <p> consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p><br>
+         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure </p>
+    
+    </div>
+
+</body>
+</html>

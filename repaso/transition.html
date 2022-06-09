@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --fondo:blue;
+            --fondofinal:red;
+        }
+
+        div{
+            position: fixed;
+            top: 10vw;
+            left: 10vh;
+            background-color: var(--fondo);
+            width: 25vw;
+            height: 25vh;
+            /*transition: width 2s, height 2s;*/
+            transition: all 2s;
+
+        }
+
+        div:hover{
+            width: 50vw;
+            height: 50vh;
+            background-color: var(--fondofinal);
+            letter-spacing: 4rem;
+
+        }
+
+        div:active{
+            transform: rotate(45deg);
+        }
+
+        h1{
+            position: fixed;
+            left: 0;
+            animation: example 10s linear 2s infinite alternate ;
+
+        }
+        
+        @keyframes example{
+            from {left:0}
+            to{left:100vw}
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>HOLA</h1>
+    </header>
+
+    <div>Cloti</div>
+
+
+</body>
+</html>

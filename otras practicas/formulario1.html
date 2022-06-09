@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /*margin: 0 auto;         =       margin-top:0;
+                                      margin-bottom:0;
+                                      margin-left:auto;
+                                      margin-right:0;*/
+        .externo{
+            border: 2px solid rgb(0, 26, 255);
+            width: 60vw;
+            margin: 0 auto 0 auto;
+
+        }
+       
+        legend{
+            outline: 1px dotted  green;
+            outline-offset: 0.2rem;
+        }
+
+        fieldset{
+            border-style: double;
+            border-color:violet;
+            border-radius: 6%;
+            border-width: 2px;
+
+        }
+
+        fieldset:nth-child(2) input{
+            margin-bottom: 1rem;
+
+        }
+
+        button{
+            background-color: rgb(0, 162, 255);
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .forcontrol{
+            margin-bottom:1rem;
+        }
+
+        label{
+            display:flex;
+        }
+
+        input{
+            width: 98%;
+            
+        }
+
+        body{
+            z-index: 10;
+            background-image: url("https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+        }
+
+
+        .fondo{
+            z-index: 1;
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="externo">
+        <form id="form">
+
+            <fieldset>
+
+                <legend>Datos vehículo</legend>
+
+                <div class="formcontrol">
+                    <label for="mat">Matricula</label>
+                    <input type="text" id ="mat" pattern="([0-9]{4}[-]?[bcdfghijklmnprstuvwxyz])|(ninguna)" name="nombre2" required>
+                
+                    <label for="mat">Matricula</label>
+                <input type="text" id ="mat" pattern="([0-9]{4}[-]?[bcdfghijklmnprstuvwxyz])|(ninguna)">
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </fieldset>
+
+
+        </form>
+
+    <button type="submit" form="form">Enviar</button>
+
+    </div>
+
+    
+
+</body>
+</html>

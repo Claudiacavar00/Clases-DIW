@@ -1,0 +1,34 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --atender: aqua;
+    --claro:#9fecad;
+    --mono: var(var(--atender))
+}
+
+
+span:first-child{
+    text-decoration: underline;
+    color:var(--atender);
+}
+
+body{
+    background-color: var(--claro);
+}
+
+kbd{
+    color:darkviolet;
+    font-family: 'Courier New', Courier, monospace;
+    
+}

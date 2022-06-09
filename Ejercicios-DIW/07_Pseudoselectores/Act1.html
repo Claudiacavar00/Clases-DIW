@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 pseudoselectores</title>
+
+    <style>
+
+        .primero{
+            width: 30vw;
+            height: 10vh;
+            margin-left: 38%;
+            margin-top: 5%;
+            background-color: rgb(231, 145, 15);
+            padding-top: 5px;
+            border-radius: 10%;
+            border-color: blue;
+            border-style: dashed;
+                                                  
+        }
+
+        .segundo{
+            width: 30vw;
+            height: 10vh;
+            margin-left: 38%;
+            margin-top: 10%;
+            background-color: rgb(195, 15, 231);
+            padding-top: 5px;
+            border-radius: 10%;
+            border-style: dotted  ;
+                                   
+        }
+
+
+        li{
+            list-style-type: square;
+        }
+
+        /*Sitio sin visitar*/
+        a:link{
+            color:rebeccapurple;
+            font-weight: bold;
+        }
+
+        /*Sitio visitado*/
+        a:visited{
+            color: greenyellow;
+            
+        }
+
+        .cambia:visited{
+            color: blue;
+        }
+
+        /*Cursor sobre enlace*/
+        a:hover{
+            color:aqua;
+            text-transform: uppercase; /*Transforma el texto a mayusculas*/
+        }
+
+        /*En el momento de ser pulsado*/
+        a:active{
+            color:crimson;
+            letter-spacing: 10px; /*Separa las letras*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="primero">
+
+        <ul>
+
+            <li><a href="https://twitter.com/" class="camibia">Twitter</a></li>
+
+            <li><a href="https://www.instagram.com/" class="camibia">Instagram</a></li>
+
+            <li><a href="https://www.w3schools.com/" class="camibia">W3Schools</a></li> 
+
+        </ul>
+    </div>
+
+    <div class="segundo">
+
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li> 
+
+            <li><a href="https://www.pinterest.es/">Pinterest</a></li>
+
+            <li><a href="https://www.google.es/"> Google</a></li>
+
+        </ul>
+        
+    </div>
+
+</body>
+</html>

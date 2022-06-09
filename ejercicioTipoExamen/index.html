@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tipo examen</title>
+
+    <style>
+
+    :root{
+            --fondoazul: hsl(209, 100%, 50%);
+            --fondo:hsl(0, 0%, 97%);
+            --letras:#0f0e0e;
+            --boton:hsl(0, 59%, 41%);
+            font-size: 12px;
+        }
+
+    * {
+    margin: 0;
+    padding: 0;
+    
+   
+    }
+
+    *, *::before, *::after{
+    box-sizing: border-box;
+    }
+
+    /*-------------------------------------------------*/
+
+    header{
+        width: 100vw;
+        height: 10vh;
+        background-color:  var(--fondoazul); 
+    }
+
+    body{
+        background-color: var(--fondo);
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    h1{
+        color: var(--fondo);
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+
+ 
+    /*--------------------IMAGENES-----------------------------------*/
+
+
+
+  div.fotos{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+
+        /*En la transformación la imagen no podrá sobresalir de su contenedor, si sobresale algo se debe ocultar.*/
+        overflow: hidden;
+       
+    }
+   
+    img{
+        border-top-left-radius: 15px 15px;
+        border-top-right-radius: 15px 15px;
+        width: 45vw;
+        height: 50vh;
+    }
+
+    img:hover{
+        transform: rotate(45deg);
+        filter: blur(5px);
+        
+    }
+
+  
+
+
+    /*------------------------TEXTO---------------------------------*/
+
+   div.titulo{
+        color: var(--fondoazul);
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+          
+   }
+    
+   div.parrafo{
+        color: var(--letras);
+        font-weight: bold;
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+   }
+
+   .lista{
+        color: var(--letras);
+        padding-top: 1rem;
+        padding-right: 3rem;
+        display: flex;
+        justify-content: space-around;
+               
+  }
+
+  li{
+    list-style-type: none;
+    text-align: inherit;
+    padding-left: 17rem;
+    }
+
+  span{
+      color:var(--fondoazul);
+      font-size: 1.3rem;
+      
+  }
+
+   /*------------------------BOTONES----------------------------------*/
+  
+   button{
+        background-color: var(--boton);
+        padding-top: 1.5rem;
+       
+
+   }
+
+   .botones{
+    display: inline;
+        justify-content: space-around;
+   }
+
+    /*-------------------------FOOTER---------------------------------*/
+   
+
+    footer{
+            background-color:var(--fondoazul); 
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Claudia Cabello Vargas</h1>
+
+    </header>
+
+
+    <main>
+
+        <div class="fotos">
+
+             <img src="repsol_grande.jpg">
+
+             <img src="repsol_grande.jpg">
+          
+             
+        </div>
+
+        <div class="titulo">
+
+           
+            <p>Facilidades de crédito</p>
+
+        
+            <p>Facilidades de crédito</p>
+
+        </div>
+
+        <div class="parrafo">
+
+            <p>Decide cuándo y cuánto pagar con tus tarjetas</p>
+            <p>Decide cuándo y cuánto pagar con tus tarjetas</p>
+
+        </div>
+
+        <div class="lista">
+
+            <ul>
+                
+                <li><span> > </span>Paga tus compras en cómodos plazos. </li>
+                   
+                <li><span> > </span>Pasa dinero de tu tarjeta de crédito a la cuenta cuando 
+                     lo necesites de forma inmediata.</li>
+
+            </ul>
+
+            <ul>
+                
+                <li><span> > </span>Paga tus compras en cómodos plazos. </li>
+                   
+                <li><span> > </span>Pasa dinero de tu tarjeta de crédito a la cuenta 
+                     cuando lo necesites de forma inmediata.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="botones">
+            <button type="button">Más informacion</button>
+            <button type="button">Más informacion</button>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <form>
+
+        <label for="">Código</label>
+        <!--TITTLE: Cuando pasamos el raton, da información adicional-->
+        <!--NAME: para comprobar que sirve el pattern--> 
+        <!--REQUIRED !!!-->
+        <input type="text" id="cod" placeholder="9999AAA" title="4 números y 3 letras" pattern=" [0-9]{4} [a-zA-Z]{3}" name="cod" > 
+       
+        <!--PATTERN:
+            SÓLO UN DIGITO: rangos[0-9] ([0123456789]) 
+            Más numeros: [0-9]{4}
+            Cuatro numeros y 3 letras: [0-9]{4} [a-zA-Z]{3}
+            [] puede haber espacios 
+            [-] puede haber guiones 
+            [-]? elemento delante puede estar o no
+            [a-zA-Z] (un caracter) [0-9a-zA-Z] (caracter o numero) {1,14} (entre 1 y 15)
+        -->
+
+        <!---->
+        <label for="cod2">Id</label>
+        <input type="text" id="cod2" placeholder="de 1 a 15 caracteres" title="4 numeros - o espacios" pattern="[a-zA-Z][0-9a-zA-Z]{1,14}"
+         name="cod"  minlength="1" maxlength="15">
+
+       
+        <label for="dni">DNI</label>
+                                                                                                    <!--([.]?[0-9]{3}[.]?){2} Se pide lo mismo DOS veces-->
+        <input type="text" id="dni" placeholder="99999999L" title="8 números (guión) y letra" pattern="[0-9]{2} ([.]?[0-9]{3}[.]?){2} [-]?[0-9a-zA-Z]{1,14}" name="dni" >
+
+        <label for="email">Email</label>
+        <input type="email" required name="email" id="email" >
+
+        <label for="otro"></label>
+        <!--[0-9a-zA-ZñÑ  \-]  Aqui el guion significa un rango de valor-->
+        <input type="text" pattern="[0-9a-zA-ZñÑ]{1,15}" maxlength="15" > 
+
+
+
+        <label for="number">Número</label>
+        <input type="number" value="5" id="num" min="0" max="9" name="num">
+        
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+
+
+
+</body>
+</html>

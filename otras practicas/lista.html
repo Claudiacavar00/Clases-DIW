@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+    <style>
+
+        a{
+            text-decoration: none;
+            transition:2s ; /*tiempo que tarda en aplicarse el estilo*/
+        }
+
+        a:hover{
+            text-decoration: underline;
+            letter-spacing: 0.1rem;
+            color:white;
+            background-color: turquoise;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        li::before{
+            content:"\260E" "-";
+        }
+
+        figure{
+             width: 30vw;
+             border: solid violet;
+             overflow: hidden;
+             /*todo lo que sobresalga, se oculta*/
+        }
+
+        figcaption{
+            text-align: center;
+        }
+
+        img{
+            width: 100%;
+            filter: blur(1px);
+            /*aplicarle un filtro a la foto
+                blur: desenfoque
+            */
+            transition: all 2s ;
+                      
+
+        }
+
+        img:hover{
+            filter:none;
+            transform: scale(1.2);
+        }
+
+        div{
+            display: flex;
+        }
+
+        figure:nth-child(1) img{
+            object-fit: fill;
+        }
+
+        figure:nth-child(2)img{
+            object-fit: contain;
+        }
+
+        figure:nth-child(3)img{
+            object-fit: cover;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    
+    <a href=""> Otro sitio</a>
+
+    <ul>
+        <li>abceadario</li>
+        <li>abceadario</li>
+        <li>abceadario</li>
+        <li>abceadario</li>
+        <li>abceadario</li>
+    </ul>
+
+    <div>
+
+        <figure>
+            <img alt="Descripción de la imagen"  src="https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg" 
+            >
+            <figcaption>Titulo de la imagen </figcaption>
+        </figure>
+
+        <figure>
+            <img alt="Descripción de la imagen"  src="https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg" 
+            >
+            <figcaption>Titulo de la imagen </figcaption>
+        </figure>
+
+        <figure>
+            <img alt="Descripción de la imagen"  src="https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg" 
+            >
+            <figcaption>Titulo de la imagen </figcaption>
+        </figure>
+
+    </div>
+
+
+</body>
+</html>

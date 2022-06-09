@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagenes y posicionamiento</title>
+    <style>
+           
+        div:nth-child(1) {
+            border-width: 1px; 
+            border-style:dotted;
+            border-color: blue;
+            background-color: blue; 
+            background: url("pajaro_1.jpg")no-repeat center;
+            width: 25vh;
+            height: 25vh;
+            top: 0;
+            right: 0;
+         }
+
+                                        
+         div:nth-child(2) {
+            border: 1px solid green; 
+            background-color: green;
+            background: url("pajaro_2.jpg");
+            width: 25vh;
+            height: 25vh;
+            top: 0;
+            left: 0;
+         } 
+        
+         div.tercero {
+                        
+             border-width: thin thick medium thin;
+             border-style: solid dotted none groove;
+             border-color: green yellow blue; 
+             background: url("pajaro_3.jpg")no-repeat center;
+             width: 25vh;
+             height: 25vh;
+             top: 45vh;
+            left: 45vw;
+            }         
+                
+            div.cuarto {
+                top: 45vh;
+                left: 0vw;
+                } 
+                    
+            div.quinto {
+                 top: 60vh;
+                left: 0vw;
+            } 
+                    
+            div, footer, header {
+                position: fixed;
+            }
+            
+            img,div {
+                width: 10vw; 
+                height: 10vh;
+            }
+                    
+            footer {
+                width: 50vw;
+                height: 20vh; 
+                bottom: 0; 
+                left: 0; 
+                background-color: rgb(0, 140, 255);
+            }
+            
+            header {
+                top: 0; 
+                height: 5vh; 
+                width: 100vw;
+                 border: 1vw solid red;
+                }
+                
+                #dentro {width: 5vw; height: 5vh; position: absolute; background-color: white;
+                        top: 3vh; left: 3vw; 
+                    }
+            img{
+                width:20vw;
+                height: auto;
+            }
+                   
+            body {
+                height: 100vh;
+                background-image: url("https://www.ecestaticos.com/image/clipping/557/418/982d84245d22ade565937ccdd3a8f082/llevo-a-arreglar-un-coche-de-lujo-asi-le-tomaron-el-pelo-los-mecanicos.jpg");
+                background-position: right bottom;
+                background-repeat: no-repeat;
+                }
+                
+            
+        </style>
+</head>
+<body>
+    
+
+     <!--1.Imagen de fondo en la parte inferior derecha.
+        2 div en la parte superior con imágenes de fondo.
+        2 imágenes en la parte izquierda.
+        1 div centrado con un tamaño concreto  y con una imagen de fondo centrada.
+        Logo de HTML en la etiqueta footer debajo de la página. Pegar footer al final de la página.-->
+        
+           
+        <header></header>
+
+        <main>
+
+                <div >DIV ARRIBA DCHA</div>
+                
+                <div>DIV ARRIBA IZQ</div>
+
+                <div class="tercero">DIV-CENTRADO</div>
+
+                <div class="cuarto"><a href="honda-cbr1000rr-fireblade.jpg">
+                     <img src="honda-cbr1000rr-fireblade.jpg"></a></div>
+                     
+            <div class="quinto"><a href="yamaha-yzf-r3.jpg">
+                     <img src="yamaha-yzf-r3.jpg"></a></div>
+                
+        </main>
+        <footer>
+            
+            <a href="http://www.w3.org/html/logo/">
+            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+            </a>
+
+        </footer>
+         
+
+</body>
+</html>
